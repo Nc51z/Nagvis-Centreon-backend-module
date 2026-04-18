@@ -1,6 +1,6 @@
 # NagVis Centreon Broker Backend
 
-This plugin is a PHP backend class that allows **NagVis** to retrieve monitoring data directly from a **Centreon Broker** database (`centreon_storage`).
+This plugin is a PHP backend class that allows **NagVis** to retrieve monitoring data directly from a **Centreon Broker** database (`centreon_storage`). Tested with Centreon 25.10 and Nagvis 1.10
 
 ## Installation
 
@@ -12,11 +12,11 @@ This plugin is a PHP backend class that allows **NagVis** to retrieve monitoring
    chown www-data:www-data GlobalBackendcentreonbroker.php
    chmod 644 GlobalBackendcentreonbroker.php
 
-  Configuration
+## Configuration
 
 To enable the backend in NagVis, edit your main configuration file (usually /usr/local/nagvis/etc/nagvis.ini.php) and add the following block:
 
-
+```bash
 [backend_centreon]
 backendtype="centreonbroker"
 dbhost="localhost"
@@ -25,12 +25,10 @@ dbname="centreon_storage"
 dbuser="centreon_user"
 dbpass="your_password"
 dbinstancename="Central"
+```
 
 Key Parameters:
-    dbhost / dbport: The location and port of your MySQL/MariaDB database.
-
-    dbname: The name of the Centreon database (usually centreon_storage).
-
-    dbuser / dbpass: Database credentials with SELECT permissions.
-
-    dbinstancename: The name of your Centreon central poller (matches the name column in the instances table).
+- dbhost / dbport: The location and port of your MySQL/MariaDB database.
+- dbname: The name of the Centreon database (usually centreon_storage).
+- dbuser / dbpass: Database credentials with SELECT permissions.
+- dbinstancename: The name of your Centreon central poller (matches the name column in the instances table).
