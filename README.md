@@ -27,8 +27,11 @@ dbpass="your_password"
 dbinstancename="Central"
 ```
 
-Key Parameters:
+### Key Parameters:
 - dbhost / dbport: The location and port of your MySQL/MariaDB database.
 - dbname: The name of the Centreon database (usually centreon_storage).
 - dbuser / dbpass: Database credentials with SELECT permissions.
 - dbinstancename: The name of your Centreon central poller (matches the name column in the instances table).
+
+## Credits
+I just rewrite this module from this repo : ([link](https://github.com/ThePharaohOps/centreon-nagvis-backend))
