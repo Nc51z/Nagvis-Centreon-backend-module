@@ -1,6 +1,6 @@
 # NagVis Centreon Broker Backend
 
-This plugin is a PHP backend class that allows **NagVis** to retrieve monitoring data directly from a **Centreon Broker** database (`centreon_storage`). Tested with Centreon 25.10 and Nagvis 1.10
+This plugin is a PHP backend class that allows **NagVis** to retrieve monitoring data directly from a **Centreon Broker** database (`centreon_storage`). Tested with Centreon 25.10 and Nagvis 1.10 (doesn't work with nagvis 1.10.1 for the moment)
 
 ## Installation
 
